@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Birthday Gift — Salwa Safitri ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <header class="topbar"><span class="brand">♡ for Salwa</span><span class="top-note">a little birthday surprise</span></header>
+
+  <main>
+    <section class="hero panel" id="home">
+      <p class="eyebrow">A DAY MADE EXTRA SPECIAL</p>
+      <div class="big-heart" aria-hidden="true">♡</div>
+      <h1>Happy Birthday,<br><span>Salwa Safitri</span></h1>
+      <p class="intro">Ada hari yang pantas dirayakan dengan cara yang istimewa. Hari ini adalah harimu!</p>
+      <div class="countdown-wrap">
+        <p class="eyebrow">MENUJU HARI SPESIALMU</p>
+        <div class="countdown">
+          <div><strong id="days">00</strong><small>Hari</small></div>
+          <div><strong id="hours">00</strong><small>Jam</small></div>
+          <div><strong id="minutes">00</strong><small>Menit</small></div>
+          <div><strong id="seconds">00</strong><small>Detik</small></div>
+        </div>
+      </div>
+      <button class="primary-btn" id="openGift">Open Your Gift ✦</button>
+      <p class="tiny">Dibuat khusus untuk Salwa Safitri (Iwa)</p>
+    </section>
+
+    <section class="panel jukebox" id="jukebox">
+      <p class="eyebrow">✦ JUKEBOX ✦</p>
+      <h2>Pilih Lagu Kita</h2>
+      <p class="muted">Tambahkan lagu MP3 milikmu ke folder <code>music</code> dengan nama <code>lagu.mp3</code>.</p>
+      <audio id="musicPlayer" src="music/lagu.mp3" preload="none" loop></audio>
+      <div class="music-controls">
+        <button class="soft-btn" id="musicToggle">▶ Putar musik</button>
+        <span id="musicStatus" class="tiny">Musik belum diputar</span>
+      </div>
+    </section>
+
+    <section class="panel letter" id="letter">
+      <p class="eyebrow">A LITTLE LETTER FOR YOU</p>
+      <div class="envelope">💌</div>
+      <h2>Untuk Iwa</h2>
+      <p class="letter-copy">Selamat ulang tahun, Iwa! Semoga di usia yang baru ini, setiap langkahmu dipenuhi hal-hal baik, kesehatan, ketenangan, dan kesempatan untuk meraih semua impianmu.</p>
+      <p class="letter-copy">Terima kasih sudah menjadi pribadi yang membawa warna dalam cerita orang-orang di sekitarmu. Jangan lupa untuk selalu menghargai setiap proses dan tetap percaya pada dirimu sendiri.</p>
+      <p class="signature">Dengan doa dan harapan terbaik ♡</p>
+      <button class="soft-btn" data-scroll="#memories">Lihat kenangan kami ↓</button>
+    </section>
+
+    <section class="panel memories" id="memories">
+      <p class="eyebrow">✦ OUR MEMORIES ✦</p>
+      <h2>Potongan Kenangan</h2>
+      <p class="muted">Masukkan foto ke folder <code>images</code> dengan nama yang sesuai.</p>
+      <div class="gallery">
+        <figure><img src="images/foto-1.jpg" alt="Kenangan pertama" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><figcaption hidden>Tambahkan foto-1.jpg</figcaption><figcaption>Memory one ♡</figcaption></figure>
+        <figure><img src="images/foto-2.jpg" alt="Kenangan kedua" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><figcaption hidden>Tambahkan foto-2.jpg</figcaption><figcaption>Memory two ♡</figcaption></figure>
+        <figure><img src="images/foto-3.jpg" alt="Kenangan ketiga" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><figcaption hidden>Tambahkan foto-3.jpg</figcaption><figcaption>Memory three ♡</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="panel film" id="film">
+      <p class="eyebrow">✦ A MOMENT FOR YOU ✦</p>
+      <h2>Film Kenangan</h2>
+      <p class="muted">Opsional: unggah video bernama <code>kenangan.mp4</code> ke folder <code>videos</code>.</p>
+      <video controls playsinline preload="metadata" src="videos/kenangan.mp4">
+        Browser kamu belum mendukung pemutar video.
+      </video>
+    </section>
+
+    <section class="panel wishes" id="wishes">
+      <p class="eyebrow">✦ PESAN DARI HATI ✦</p>
+      <h2>Harapan Terbaik Untukmu</h2>
+      <div class="wish-card">Semoga hal-hal yang sedang kamu perjuangkan menemukan jalannya. Semoga kamu selalu dikelilingi orang-orang baik, punya banyak alasan untuk tersenyum, dan tidak kehabisan semangat untuk bermimpi. 🌷</div>
+      <button class="primary-btn" id="surpriseBtn">Buka kejutan terakhir ✨</button>
+      <div class="surprise hidden" id="surprise">
+        <div class="tree">🌳</div>
+        <h2>Let your dreams grow</h2>
+        <p>Semoga kebahagiaanmu tumbuh setiap hari, seperti pohon yang terus bersemi.</p>
+        <button class="soft-btn" id="replayBtn">Ulangi cerita ↺</button>
+      </div>
+    </section>
+  </main>
+  <footer>Made with care for Salwa Safitri ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
